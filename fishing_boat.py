@@ -17,7 +17,8 @@ elif number_of_fishermen >= 12:  #else:
     boat_rent *= 0.75
 if number_of_fishermen % 2 == 0 and season != "Autumn":
     boat_rent *= 0.95
+difference = abs(budget - boat_rent)
 if budget >= boat_rent:
-    print(f"Yes! You have {} leva left.")
+    print(f"Yes! You have {difference:.2f} leva left.")
 else:
     print(f"Not enough money! You need {difference:.2f} leva.")
